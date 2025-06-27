@@ -35,13 +35,57 @@
             font-style: italic;
         }
 
-        .testimonial-box {
-            border: 1px solid #cecdcb;
-            padding: 20px;
-            height: 100%;
-            
-            
-        }
+        .testimonials-section {
+      padding: 60px 20px;
+      background-color: #fff;
+      text-align: center;
+    }
+
+    .testimonials-section h2 {
+      color: #ff5722;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+
+    .testimonial-card {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-bottom: 3px solid #2196f3;
+      border-radius: 5px;
+      padding: 25px;
+      margin: 15px 0;
+      transition: transform 0.2s;
+      height: 100%;
+    }
+
+    .testimonial-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .testimonial-card h5 {
+      color: #1565c0;
+      font-weight: bold;
+    }
+
+    .testimonial-card small {
+      color: #666;
+    }
+
+    .testimonial-card p {
+      font-style: italic;
+      margin: 15px 0;
+    }
+
+    .testimonial-card span {
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    .more {
+      color: #2196f3;
+      cursor: pointer;
+    }
 
         footer {
             background-color: #111;
@@ -179,31 +223,52 @@
         </div>
     </section>
 
-    <section class="py-5">
-        <div class="container text-center">
-            <h2 class="text-danger mb-5">OVERHEAD FROM TRAVELERS</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-box">
-                        <p>"We booked Hotel Eucalyptus through Jay after reading hundreds of reviews..."</p>
-                        <strong>- Joseph from Canada</strong>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-box">
-                        <p>"Thanks Jay for setting me cheap room near Orchard, cheap and effective travel guidance..."</p>
-                        <strong>- Andy from Singapore</strong>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="testimonial-box">
-                        <p>"Our family vacationing in Japan turned into success..."</p>
-                        <strong>- Diana from United States</strong>
-                    </div>
-                </div>
-            </div>
+    <section class="testimonials-section">
+  <div class="container">
+    <h2>OVERHEAD FROM TRAVELERS</h2>
+    <div class="row justify-content-center">
+
+      <!-- Testimonial 1 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <h5>Hotel Eucalyptus</h5>
+          <small>in Greece</small>
+          <p>
+            “We booked Hotel Eucalyptus through Jay after reading a handful of reviews, and it was easily the best decision we made 
+            <span class="more" onclick="alert('Full review: The hotel was amazing with great service and view.')">...more</span>”
+          </p>
+          <span>- Joyce from Canada</span>
         </div>
-    </section>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <h5>Holiday Inn Resort Batam</h5>
+          <small>in Indonesia</small>
+          <p>
+            “Thanks Jay for letting me change room without charge and rebate the difference. Nice staffs Agoda and Holiday Inn!”
+          </p>
+          <span>- Andy from Singapore</span>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <h5>Hotel Granvia Kyoto</h5>
+          <small>in Japan</small>
+          <p>
+            “Our family was traveling via bullet train between cities in Japan with our luggage - the location for this hotel made that 
+            <span class="more" onclick="alert('Full review: Perfect location for travelers using Japan Rail Pass.')">...more</span>”
+          </p>
+          <span>- Diane from the United States</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
     <section class="contact-section">
     <div class="container">
       <h2>CONTACT US</h2>
